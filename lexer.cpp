@@ -1,12 +1,13 @@
 #include <stdio.h>
 
 
-void strcom(char firstarray[], char secondarray[])
+bool strcom(char firstarray[], char secondarray[])
 {
     for (int i = 0; i < 7; i++)
     {
         if (firstarray[i] != secondarray[i]) return false;
     }
+    return true;
 }
 
 

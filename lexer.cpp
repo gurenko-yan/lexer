@@ -38,7 +38,6 @@ int main()
     r++;
     char parsed[r][columns];
 
-    // filling matrix | заполнение матрицы
     for (int i = 0; i < sizeof(input); i++)
     {
         if (input[i] == ' ')

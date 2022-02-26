@@ -16,7 +16,6 @@ int main()
     const int rows = 4;
     const int columns = 7;
 
-    // matrix of keywords
     char keywords[rows][columns] = {
         "int",
         "float",
@@ -26,14 +25,10 @@ int main()
 
     const char input[] = "test float double char";
 
-    // auxiliary variables | вспомогательные переменные
     int r = 0;
     int element = 0;
     int word = 0;
 
-    /*-----------------------------------------------------------------------------*/
-
-    // rows of matrix | ряды матрицы
     for (int i = 0; i < sizeof(input); i++)
     {
         if (input[i] == ' ') r++;
@@ -62,8 +57,6 @@ int main()
             element++;
         }
     }
-
-    /*-----------------------------------------------------------------------------*/
 
     for (int i = 0; i < r; i++)
     {
